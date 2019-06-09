@@ -1,0 +1,57 @@
+@import 'theme/colors';
+
+.featured {
+	display: grid;
+	padding: 0 10vw;
+	height: 100vh;
+	align-items: center;
+	justify-items: center;
+	background-color: $bg-4;
+
+	&__projects {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-gap: 3rem;
+		grid-column-gap: 10rem;
+		align-items: center;
+	}
+
+	&__link {
+		display: block;
+	}
+
+	&__img {
+		display: block;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		box-shadow: 0 0 1rem rgba(black, .1);
+		background-color: #fff;
+	}
+
+	&__details {
+		padding: 2rem;
+		display: grid;
+		grid-gap: 1rem;
+		box-shadow: 0 0 1rem rgba(black, .1);
+		background-color: #fff;
+		// opacity: 0;
+	}
+
+	// &__link:hover + &__details {
+	// 	opacity: 1;
+	// }
+
+	&__name {
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+	&__type {
+		font-style: italic;
+	}
+
+	&__desc {
+
+	}
+}
