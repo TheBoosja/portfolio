@@ -1,4 +1,4 @@
-@import 'theme/colors';
+@import '../../theme/colors';
 
 .featured {
 	display: grid;
@@ -35,12 +35,15 @@
 		grid-gap: 1rem;
 		box-shadow: 0 0 1rem rgba(black, .1);
 		background-color: #fff;
-		// opacity: 0;
+		transform: translateX(5rem);
+		opacity: 0;
 	}
 
-	// &__link:hover + &__details {
-	// 	opacity: 1;
-	// }
+	&__hover {
+		transform: translateX(0px);
+		opacity: 1;
+		transition: all .3s ease-out;
+	}
 
 	&__name {
 		font-size: 2rem;
