@@ -1,14 +1,40 @@
 @import 'theme/colors';
 
 .summary {
+	position: relative;
 	height: 100vh;
 	background-color: $bg-6;
+	align-items: center;
+	justify-items: center;
+
+	&__wrapper {
+		width: 80vw;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&__figure {
+		float: left;
+		margin: 2rem;
+		width: 40vw;
+		height: 40vw;
+		clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+		shape-outside: polygon(25% 5%, 25% 0%, 75% 0%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+	}
 
 	&__img {
-
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 
 	&__text {
-
+		display: inline;
+		font-size: 2rem;
+		padding-top: 4rem;
+		vertical-align: middle;
 	}
 }

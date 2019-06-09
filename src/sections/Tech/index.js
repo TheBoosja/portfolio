@@ -5,7 +5,7 @@ class Tech extends Component {
 	render() {
 		const icons = []
 		for (let i = 0; i < 40; i++) {
-			icons.push(<div className='tech__icon' />)
+			icons.push(<div className='tech__icon' key={i} />)
 		}
 
 		return (
